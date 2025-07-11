@@ -1,0 +1,94 @@
+
+* {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 200px;      
+    object-fit: cover;  
+}
+
+
+.card {
+    border: 2px dotted #000;
+    transition: transform 0.2s ease;
+    cursor: pointer; 
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+
+.card-title {
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.btn-pizza {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-pizza:hover,
+.btn-pizza:focus {
+    background-color: #c62828;
+    cursor: pointer;
+    outline: none;
+}
+
+
+footer {
+    border-top: 2px dotted #000;
+    margin-top: 2em;
+    padding: 1em 0;
+    background-color: #222;  
+    color: white;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+}
+
+
+.center {
+    text-align: center;
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.carousel-item img {
+    height: 400px;
+    object-fit: contain;   
+    background-color: #000; 
+    width: 100%;
+}
+
+
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 150px;
+    }
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    .carousel-item img {
+        height: 250px;       
+        object-fit: contain; 
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contáctenos - Que Rica Pizza</title>
+  <link rel="icon" type="image/jpg" href="imagenes/Logotipo Que rica Pizza.jpg" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Css/Estilo.css" />
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="imagenes/Logotipo Que rica Pizza.jpg" height="40" alt="Logo" /> Que Rica Pizza
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="Inicio.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="Sobre Nosotros.html">Sobre Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="Productos.html">Productos</a></li>
+        <li class="nav-item active"><a class="nav-link" href="#">Contáctenos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5 mb-5">
+    <h2 class="text-center mb-4">Contáctanos</h2>
+    <form>
+      <div class="form-group">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" required />
+      </div>
+      <div class="form-group">
+        <label for="correo">Correo electrónico</label>
+        <input type="email" class="form-control" id="correo" required />
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-danger">Enviar</button>
+    </form>
+  </div>
+<div class="container mb-5">
+  <h3 class="text-center mb-4">Nuestra Ubicación</h3>
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" 
+            src="https://www.google.com/maps?q=-33.700698,-70.562973&hl=es&z=15&output=embed" 
+            allowfullscreen></iframe>
+  </div>
+</div>
+
+  <footer class="bg-dark text-white text-center p-3">
+    © 2025 Que Rica Pizza. Todos los derechos reservados.
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

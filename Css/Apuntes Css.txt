@@ -1,0 +1,100 @@
+/* Establece la fuente principal para toda la página y ajusta el modelo de caja */
+* {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilo para las imágenes dentro de las tarjetas */
+.card-img-top {
+    width: 100%;                /* Que ocupe todo el ancho de la tarjeta */
+    height: 200px;              /* Altura fija para que todas se vean iguales */
+    object-fit: cover;          /* Recorta la imagen para que llene bien el espacio sin deformarse */
+}
+
+/* Estilo general de las tarjetas */
+.card {
+    border: 2px dotted #000;    /* Borde punteado negro */
+    transition: transform 0.2s ease; /* Efecto suave al hacer hover */
+    cursor: pointer;            /* Cambia el cursor al pasar sobre la tarjeta */
+}
+
+/* Efecto al pasar el cursor sobre la tarjeta */
+.card:hover {
+    transform: scale(1.03);     /* Aumenta ligeramente el tamaño para dar efecto visual */
+}
+
+/* Título de las tarjetas centrado y en negrita */
+.card-title {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Estilo personalizado para el botón de pizza */
+.btn-pizza {
+    background-color: #e63946;  /* Rojo intenso de fondo */
+    color: white;               /* Texto blanco */
+    border: none;
+    transition: background-color 0.3s ease; /* Transición suave de color al interactuar */
+}
+
+/* Efecto al pasar el mouse o hacer clic en el botón */
+.btn-pizza:hover,
+.btn-pizza:focus {
+    background-color: #c62828;  /* Rojo más oscuro */
+    cursor: pointer;
+    outline: none;              /* Quita el contorno del foco */
+}
+
+/* Estilo del pie de página */
+footer {
+    border-top: 2px dotted #000; /* Línea superior punteada */
+    margin-top: 2em;
+    padding: 1em 0;
+    background-color: #222;      /* Fondo oscuro para contraste */
+    color: white;                /* Texto blanco */
+}
+
+/* Texto centrado dentro del footer */
+footer p {
+    text-align: center;
+    margin: 0;
+}
+
+/* Clase auxiliar para centrar contenido */
+.center {
+    text-align: center;
+}
+
+/* Estilo del logo/nombre en la barra de navegación */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;                 /* Espacio entre elementos internos */
+}
+
+/* Imágenes del carrusel */
+.carousel-item img {
+    height: 400px;              /* Altura fija para mantener consistencia */
+    object-fit: contain;        /* Muestra la imagen completa sin recortarla */
+    background-color: #000;     /* Fondo negro para rellenar espacio extra */
+    width: 100%;
+}
+
+/* Estilos responsivos para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 150px;          /* Imágenes más pequeñas en móvil */
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;     /* Texto del logo un poco más pequeño */
+    }
+
+    .carousel-item img {
+        height: 250px;          /* Carrusel más bajo en móviles */
+        object-fit: contain;    /* Se sigue viendo completa la imagen */
+    }
+}
+
